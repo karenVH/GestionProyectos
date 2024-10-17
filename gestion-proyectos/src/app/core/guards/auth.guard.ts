@@ -21,7 +21,7 @@ export class AuthGuard implements CanActivate {
   }
   
   logout() {
-    localStorage.removeItem('isLoggedIn');  // Elimina el estado de autenticación
-    this.router.navigate(['/login']);  // Redirige a la página de login
+    localStorage.removeItem('isLoggedIn');  
+    this.router.navigate(['/login']);  
   }
 }
