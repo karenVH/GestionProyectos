@@ -1,0 +1,25 @@
+<h1>Create Project</h1>
+<form [formGroup]="projectForm" (ngSubmit)="submitForm()">
+
+  <mat-form-field>
+    <mat-label>Titulo de proyecto</mat-label>
+    <input matInput formControlName="title" placeholder="Enter project title" required class="input"/>
+    <mat-error *ngIf="projectForm.get('title')?.hasError('required') && projectForm.get('title')?.touched">
+      Titulo es obligatorio
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Descripcion de proyecto</mat-label>
+    <textarea matInput formControlName="description" placeholder="Enter project description" required></textarea>
+    <mat-error *ngIf="projectForm.get('description')?.hasError('required') && projectForm.get('description')?.touched">
+      Descripcion es obligatorio
+    </mat-error>
+    <mat-error *ngIf="projectForm.get('description')?.hasError('minlength') && projectForm.get('description')?.touched">
+      La descripcion debe tener mas de 10 caracteres
+    </mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="projectForm.invalid">Crear Proyecto</button>
+  <button mat-raised-button color="warn" (click)="close()">Cancelar</button>
+</form>

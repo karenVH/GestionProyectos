@@ -1,0 +1,47 @@
+
+h1{
+    color:#ce55ec;
+    text-align: center;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.mat-dialog-container {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    font-family: "Afacad Flux", sans-serif;
+    border: 1px solid #ce55ec;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  form input, form textarea {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    background: transparent !important;
+    color: #ce55ec !important;
+    border: 1px solid #ce55ec;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Afacad Flux", sans-serif;
+  }
+  
+  button:hover {
+    background-color: #ce55ec;
+    color: #ccc;
+  }
+  
