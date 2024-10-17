@@ -37,7 +37,7 @@ npm start
 * Ingresa a la Url para visualizar el Frontend
 
 ```
-[http://localhost:3000/](http://localhost:4200
+http://localhost:4200
 ```
 
 *Para ingresar el login, y tener una autenticacion exitosa:
