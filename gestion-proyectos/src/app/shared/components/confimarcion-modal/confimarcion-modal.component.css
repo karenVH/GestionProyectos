@@ -1,0 +1,47 @@
+.custom-modal {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .containerModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ce55ec;
+    font-family: "Afacad Flux", sans-serif;
+  }
+  
+  .btnConfirmacion {
+    border: 2px solid #ce55ec;  /* Borde rosado */
+    background-color: transparent;  /* Fondo transparente */
+    color: #ce55ec;  /* Texto rosado */
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Afacad Flux", sans-serif;
+  }
+  
+  .btnConfirmacion:hover {
+    background-color: #ce55ec;  /* Fondo rosado al pasar el mouse */
+    color: #fff;
+  }
+  
+  .mat-dialog-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Centrar el botón */
+  }
+  

@@ -1,0 +1,170 @@
+.fondo{
+  background-repeat: no-repeat;
+  background-size: container;
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(78,9,121,1) 35%, rgba(179,0,255,1) 100%);
+}
+
+  /*banner principal*/
+  .banner{
+    width: 100%;
+    height: 250px;
+    background-image: url('.././../../../../public/assets/images/banner.png');
+    margin-bottom: 30px;
+  }
+  
+/*Container de tarjetas*/
+.containercard{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  place-content: center;
+  row-gap: 10px;
+  column-gap: 25px;
+  color: #fff;
+}
+
+.card{
+  background: #211631;
+  border: 2px solid #ce55ec;
+  width: 100%;
+  border-radius: 20px;
+  height: 265px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ font-family: "Afacad Flux", sans-serif;
+}
+
+.card h3{
+  margin-bottom: 0;
+}
+
+.card a{
+  background: #ce55ec;
+  font-size: 20px;
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.card a:hover{
+  background: #8a399e;
+}
+
+.btncrear{
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.card svg{
+  width: 60px;
+  height: 60px;
+}
+
+.number{
+  background: #ce55ec;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnscard{
+ margin-top: 15px;
+ display: flex;
+ column-gap: 10px;
+}
+
+.editar, .eliminar{
+  width: 35px;
+  height: 38px;
+  background: none;
+  border: 1px solid #ce55ec;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.editar:hover {
+  background-color: #ce55ec4d;
+}
+
+.eliminar:hover{
+  background-color: #ce55ec4d;
+}
+
+.editar svg{
+  width: 25px;
+  height: 25px;
+}
+
+.eliminar svg{
+  width: 25px;
+  height: 25px;
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+ .containercard{
+  grid-template-columns: 40% 40%;
+ }
+}
+@media (max-width: 499px) {
+  .containercard{
+    grid-template-columns: 70%;
+  }
+}
+
+/*Modal*/
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1001;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
